@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Heading */
+.container h1 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Time + Date */
+.container p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Input Section */
+.container div {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+/* Input */
+.container input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.container input:focus {
+  border-color: #667eea;
+}
+
+/* Add Button */
+.container button {
+  padding: 10px 15px;
+  border: none;
+  background: rgb(28, 95, 240);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container button:hover {
+  background: #5a67d8;
+}
+
+/* List */
+.container ol {
+  list-style: none;
+  margin-top: 10px;
+}
+
+/* List Item */
+.container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+/* Task Text */
+.container li span {
+  word-break: break-word;
+}
+
+/* Delete Button */
+.container li button {
+  background: #e53e3e;
+}
+
+.container li button:hover {
+  background: #c53030;
+}
+
+/* 📱 Responsive */
+@media (max-width: 500px) {
+  .container {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .container div {
+    flex-direction: column;
+  }
+
+  .container button {
+    width: 100%;
+  }
+
+  .container li {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+}
